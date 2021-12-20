@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>SYAHIRA<br>WEBSITE</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Family</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biodata</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experience</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Syahira Website</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>My Gallery.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <div class="w3-half">
+      <img src="me1.jpg" style="width:100%" onclick="onClick(this)" alt="me1">
+      <img src="sya.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+    <div class="w3-half">
+      <img src="family2.jpg" style="width:50%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="family0.jpg" style="width:50%" onclick="onClick(this)" alt="Bedroom and office in one space">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About Me -->
+  <div class="w3-container" id="About Me" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Me.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>This is the first time I create the personal website for myself. Hope you all enjoy to see the contains of this website.</p>
+    <p>This website bring you guys to know about myself and my little experience that I have throught. From this website also i create about my little happy family that I love it so much. I hope this website will give positive vibe for yourself.
+    </p>
+  </div>
+  
+  <!-- Family -->
+  <div class="w3-container" id="Family" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Family.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>Family is the most valuable asset. It's true in my life, the aphorism for this small family will explain it. The extraordinary love and affection of the family will always flow the warmth of the soul.
+    </p>
+    <p><b>Our family members are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- Family -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="sila.jpg" alt="Silawati" style="width:100%">
+        <div class="w3-container">
+          <h3>Nor Silawati</h3>
+          <p class="w3-opacity">Nurse</p>
+          <p>She is my second sister that give a positive vibe for me. Althougt she was strict but i believe her do for good.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="khai.jpg" alt="Khairul" style="width:70%">
+        <div class="w3-container">
+          <h3>Khairul</h3>
+          <p class="w3-opacity">Officer Bank</p>
+          <p>He is my only brother that I have. Overall for me he is the responsible person and i hope he will continue to do so.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="sya5.jpg" alt="Noor Azian" style="width:80%">
+        <div class="w3-container">
+          <h3>Noor Azian</h3>
+          <p class="w3-opacity">Engineer</p>
+          <p>This is my sister that i need to be patient with her. She is someone who hardwoking and kind hearted</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Experience.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>My first work experience
+ After finishing STPM and relaxing with my friends for about 3 weeks, I thought about what else to do. Still, it turns out that my educational assignment ended too early. 
+"I also know that you like playing with young nieces, nephews and cousins, so come here and tell me until I find a permanent teacher." My cousin Aisha called me and offered me a job. So I got  my first job as a temporary teacher at the Tutor Centre.  Sometimes I felt like Jill fall trades teaching Malay, English, and Sains education in third grade.  
+For example, I learned to study hard when I really care about my effectiveness as a teacher and whether my students are studying. Playing with a few young relatives is also quite different from dealing with 18 uncontrollable children with different learning abilities and interests. 
+In 4 weeks, I learned how difficult it is to be a teacher. There have been many great times to discover things together, but there have also been times when I wanted to give up, especially when some of the kids had a hard time or refused to do their homework. 
+<br></p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">School</li>
+        <li class="w3-padding-16">SMK TANJONG PUTERI</li>
+        <li class="w3-padding-16">2011- 2016</li>
+        <li class="w3-padding-16">SPM</li>
+        <li class="w3-light-grey w3-padding-24">
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">School</li>
+        <li class="w3-padding-16">SMK KUALA KETIL</li>
+        <li class="w3-padding-16">2017- 2018</li>
+        <li class="w3-padding-16">STPM</li>
+      </ul>
+    </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your hear your problem? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Copyright ©2021 All rights reserved</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
